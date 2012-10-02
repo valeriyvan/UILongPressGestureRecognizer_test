@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ControllerViewController.h
 //  UILongPressGestureRecognizer_test
 //
 //  Created by Valeriy Van on 02.10.12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface ControllerViewController : UITableViewController
 
 @end
