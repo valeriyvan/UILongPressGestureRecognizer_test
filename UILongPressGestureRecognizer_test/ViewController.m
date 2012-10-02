@@ -59,9 +59,41 @@
     return 54;
 }
 
--(void)detectTouchImage
+-(void)detectTouchImage:(UIGestureRecognizer *)gestureRecognizer;
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Image long tapped" delegate:nil cancelButtonTitle:@"Ok, I'm happy now" otherButtonTitles:nil, nil ];
+    NSMutableString *ttl = [NSMutableString stringWithString:@"GestureRecognizer"];
+    if(UIGestureRecognizerStateBegan == gestureRecognizer.state) {
+        // Called on start of gesture, do work here
+        [ttl appendString:@" began"];
+    } else if(UIGestureRecognizerStateChanged == gestureRecognizer.state) {
+        // Do repeated work here (repeats continuously) while finger is down
+        [ttl appendString:@" changed"];
+    } else if(UIGestureRecognizerStateEnded == gestureRecognizer.state) {
+        // Do end work here when finger is lifted
+        [ttl appendString:@" ended"];
+    } else if(UIGestureRecognizerStateCancelled == gestureRecognizer.state) {
+        // Do end work here when finger is lifted
+        [ttl appendString:@" cancelled"];
+    } else if(UIGestureRecognizerStateFailed == gestureRecognizer.state) {
+        // Do end work here when finger is lifted
+        [ttl appendString:@" failed"];
+    } else
+    // UIGestureRecognizerStateRecognized is the same as UIGestureRecognizerStateEnded
+    //if(UIGestureRecognizerStateRecognized == gestureRecognizer.state) {
+    //    // Do end work here when finger is lifted
+    //    [ttl appendString:@" recognized"];
+    //} else
+    if(UIGestureRecognizerStatePossible == gestureRecognizer.state) {
+        // Do end work here when finger is lifted
+        [ttl appendString:@" possible"];
+    }
+
+    UIImageView *myImageView = (UIImageView*)gestureRecognizer.view;
+    
+    // testing myImageView.image==nil you can check when myImageView has no image in it
+    NSString *msg = myImageView.image==nil? @"no image": nil;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:ttl message:msg delegate:nil cancelButtonTitle:@"Ok, I'm happy now" otherButtonTitles:nil, nil ];
     [alert show];
 }
 
@@ -75,11 +107,21 @@
         imageView.tag = 777;
         imageView.userInteractionEnabled = YES;
         
-        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(detectTouchImage)];
-        [longPress setMinimumPressDuration:1.0];
+        // UILongPressGestureRecognizer
+        // I really have no ideai why it fires three times
+        // Try UITapGestureRecognizer with snippet below. It fires once.
+        // Oh, I got it. UILongPressGestureRecognizer is is a continuous event recognizer.
+        // See detectTouchImage how it could be handled.
+        UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(detectTouchImage:)];
+        [recognizer setMinimumPressDuration:1.0];
         [imageView setUserInteractionEnabled:YES];
-        [imageView addGestureRecognizer:longPress];
-                
+        [imageView addGestureRecognizer:recognizer];
+
+        ////UITapGestureRecognizer
+        //UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(detectTouchImage:)];
+        //[imageView setUserInteractionEnabled:YES];
+        //[imageView addGestureRecognizer:recognizer];
+
         [cell addSubview:imageView];
     }
     
