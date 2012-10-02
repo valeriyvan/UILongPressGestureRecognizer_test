@@ -128,7 +128,7 @@
     // Configure the cell...
     
     // Set image into imageView
-    NSString *imageFileName = [NSString stringWithFormat:@"%d.png", [indexPath row]+1];
+    NSString *imageFileName = [NSString stringWithFormat:@"images/%d.png", [indexPath row]+1];
     UIImageView *myImageView = (UIImageView*)[cell viewWithTag:777];
     myImageView.image = [UIImage imageNamed:imageFileName];
     
