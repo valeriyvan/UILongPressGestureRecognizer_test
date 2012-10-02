@@ -56,7 +56,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 53;
+    return 54;
 }
 
 -(void)detectTouchImage
@@ -70,7 +70,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(320/2-20, 0, 40, 40)];
         imageView.tag = 777;
         imageView.userInteractionEnabled = YES;
@@ -82,12 +82,21 @@
                 
         [cell addSubview:imageView];
     }
+    
     // Configure the cell...
     
+    // Set image into imageView
     NSString *imageFileName = [NSString stringWithFormat:@"%d.png", [indexPath row]+1];
     UIImageView *myImageView = (UIImageView*)[cell viewWithTag:777];
     myImageView.image = [UIImage imageNamed:imageFileName];
     
+    // Set text and detailText
+    NSMutableString *text =  [NSMutableString stringWithFormat:@"%d", [indexPath row]+1];
+    if (myImageView.image==nil)
+        [text appendString:@" file not found in bundle"];
+    cell.textLabel.text = [text copy];
+    cell.detailTextLabel.text = [imageFileName copy];
+
     return cell;
 }
 
