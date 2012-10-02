@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35B72C7E161AF27800350CD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72C7D161AF27800350CD6 /* UIKit.framework */; };
+		35B72C80161AF27800350CD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72C7F161AF27800350CD6 /* Foundation.framework */; };
+		35B72C82161AF27800350CD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B72C81161AF27800350CD6 /* CoreGraphics.framework */; };
+		35B72C88161AF27800350CD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B72C86161AF27800350CD6 /* InfoPlist.strings */; };
+		35B72C8A161AF27800350CD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B72C89161AF27800350CD6 /* main.m */; };
+		35B72C8E161AF27800350CD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B72C8D161AF27800350CD6 /* AppDelegate.m */; };
+		35B72C91161AF27800350CD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B72C90161AF27800350CD6 /* ViewController.m */; };
+		35B72C94161AF27800350CD6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B72C92161AF27800350CD6 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35B72C79161AF27800350CD6 /* UILongPressGestureRecognizer_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILongPressGestureRecognizer_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B72C7D161AF27800350CD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35B72C7F161AF27800350CD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35B72C81161AF27800350CD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35B72C85161AF27800350CD6 /* UILongPressGestureRecognizer_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UILongPressGestureRecognizer_test-Info.plist"; sourceTree = "<group>"; };
+		35B72C87161AF27800350CD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35B72C89161AF27800350CD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35B72C8B161AF27800350CD6 /* UILongPressGestureRecognizer_test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILongPressGestureRecognizer_test-Prefix.pch"; sourceTree = "<group>"; };
+		35B72C8C161AF27800350CD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35B72C8D161AF27800350CD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35B72C8F161AF27800350CD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		35B72C90161AF27800350CD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35B72C93161AF27800350CD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35B72C76161AF27800350CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B72C7E161AF27800350CD6 /* UIKit.framework in Frameworks */,
+				35B72C80161AF27800350CD6 /* Foundation.framework in Frameworks */,
+				35B72C82161AF27800350CD6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35B72C6E161AF27800350CD6 = {
+			isa = PBXGroup;
+			children = (
+				35B72C83161AF27800350CD6 /* UILongPressGestureRecognizer_test */,
+				35B72C7C161AF27800350CD6 /* Frameworks */,
+				35B72C7A161AF27800350CD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35B72C7A161AF27800350CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35B72C79161AF27800350CD6 /* UILongPressGestureRecognizer_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B72C7C161AF27800350CD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35B72C7D161AF27800350CD6 /* UIKit.framework */,
+				35B72C7F161AF27800350CD6 /* Foundation.framework */,
+				35B72C81161AF27800350CD6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35B72C83161AF27800350CD6 /* UILongPressGestureRecognizer_test */ = {
+			isa = PBXGroup;
+			children = (
+				35B72C8C161AF27800350CD6 /* AppDelegate.h */,
+				35B72C8D161AF27800350CD6 /* AppDelegate.m */,
+				35B72C8F161AF27800350CD6 /* ViewController.h */,
+				35B72C90161AF27800350CD6 /* ViewController.m */,
+				35B72C92161AF27800350CD6 /* ViewController.xib */,
+				35B72C84161AF27800350CD6 /* Supporting Files */,
+			);
+			path = UILongPressGestureRecognizer_test;
+			sourceTree = "<group>";
+		};
+		35B72C84161AF27800350CD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35B72C85161AF27800350CD6 /* UILongPressGestureRecognizer_test-Info.plist */,
+				35B72C86161AF27800350CD6 /* InfoPlist.strings */,
+				35B72C89161AF27800350CD6 /* main.m */,
+				35B72C8B161AF27800350CD6 /* UILongPressGestureRecognizer_test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35B72C78161AF27800350CD6 /* UILongPressGestureRecognizer_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35B72C97161AF27800350CD6 /* Build configuration list for PBXNativeTarget "UILongPressGestureRecognizer_test" */;
+			buildPhases = (
+				35B72C75161AF27800350CD6 /* Sources */,
+				35B72C76161AF27800350CD6 /* Frameworks */,
+				35B72C77161AF27800350CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UILongPressGestureRecognizer_test;
+			productName = UILongPressGestureRecognizer_test;
+			productReference = 35B72C79161AF27800350CD6 /* UILongPressGestureRecognizer_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35B72C70161AF27800350CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = w7software.com;
+			};
+			buildConfigurationList = 35B72C73161AF27800350CD6 /* Build configuration list for PBXProject "UILongPressGestureRecognizer_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35B72C6E161AF27800350CD6;
+			productRefGroup = 35B72C7A161AF27800350CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35B72C78161AF27800350CD6 /* UILongPressGestureRecognizer_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35B72C77161AF27800350CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B72C88161AF27800350CD6 /* InfoPlist.strings in Resources */,
+				35B72C94161AF27800350CD6 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35B72C75161AF27800350CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B72C8A161AF27800350CD6 /* main.m in Sources */,
+				35B72C8E161AF27800350CD6 /* AppDelegate.m in Sources */,
+				35B72C91161AF27800350CD6 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35B72C86161AF27800350CD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35B72C87161AF27800350CD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35B72C92161AF27800350CD6 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35B72C93161AF27800350CD6 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35B72C95161AF27800350CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35B72C96161AF27800350CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35B72C98161AF27800350CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UILongPressGestureRecognizer_test/UILongPressGestureRecognizer_test-Prefix.pch";
+				INFOPLIST_FILE = "UILongPressGestureRecognizer_test/UILongPressGestureRecognizer_test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35B72C99161AF27800350CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UILongPressGestureRecognizer_test/UILongPressGestureRecognizer_test-Prefix.pch";
+				INFOPLIST_FILE = "UILongPressGestureRecognizer_test/UILongPressGestureRecognizer_test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35B72C73161AF27800350CD6 /* Build configuration list for PBXProject "UILongPressGestureRecognizer_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B72C95161AF27800350CD6 /* Debug */,
+				35B72C96161AF27800350CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35B72C97161AF27800350CD6 /* Build configuration list for PBXNativeTarget "UILongPressGestureRecognizer_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B72C98161AF27800350CD6 /* Debug */,
+				35B72C99161AF27800350CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35B72C70161AF27800350CD6 /* Project object */;
+}
